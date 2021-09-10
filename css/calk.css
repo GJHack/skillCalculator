@@ -1,0 +1,314 @@
+/*
+body {
+  margin: 1vw 25% 0 25%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+*/
+.mainContainerCalc {
+  margin-left: 15%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  min-width: 500px;
+  max-width: 500px;
+  min-height: 573.2px;
+  max-height: 573.2px;
+
+  font-family: IM Fell DW Pica,Arial,sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+}
+.nameCalc {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+.rowCalc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 1px;
+  width: 100%;
+  height: 89px;
+    border: none;
+  outline: none;
+}
+
+.onceItemCalc {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100px;
+  max-width: 100px;
+  min-height: 80px;
+  max-height: 80px;
+  border: none;
+  outline: none;
+}
+.clickCalc {
+  position: absolute;
+  z-index: 121;
+  width: 100%;
+  height: 100%;
+}
+/* СКРЫТЫЙ ТЕКСТ */
+
+.hiddenTextCalc {
+  display: none;
+  transition: all .3s;
+}
+.showedTextCalc {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 15 !important;
+  display: flex;
+  padding: 0 2px 0 20px !important;
+  color: white !important;
+  background-color: rgba(34, 34, 34,.9) !important;
+  flex-direction: column;
+  width: 500px;
+  transition: all .3s;
+}
+.showedTextCalc p {
+ font-size: .8em;
+}
+.onceItemCalc img {
+    position: absolute;
+    z-index: 10;
+    min-width: 53.35px;
+    max-width: 53.35px;
+    min-height: 53.35px;
+    max-height: 53.35px;
+    background-color: #222222;
+}
+.onceItemCalc .roundImgCalc {
+  min-width: 38.8px;
+  max-width: 38.8px;
+  min-height: 38.8px;
+  max-height: 38.8px;
+  border-radius: 50%;
+  background-color: #222222;
+}
+.onceItemCalc .bigRoundCalc {
+  border-radius: 50%;
+}
+.onceItemCalc .haveNoSkillCalc {
+  visibility: hidden;
+}
+
+
+/*********************** БЕЛЫЕ НАПРАВЛЯЮЩИЕ **************************/
+
+.up::before {
+    content: "";
+    position: absolute;
+    z-index: 4 !important;
+    display: flex;
+    min-width: 87px;
+    min-height: 3px;
+    top: -4px;
+    left: 7px;
+    background-color: #313131;
+    transform: rotateZ(90deg);
+}
+
+.up::before {
+    content: "";
+    position: absolute;
+    z-index: 4 !important;
+    display: flex;
+    min-width: 90px;
+    min-height: 3px;
+    top: -4px;
+    left: 7px;
+    background-color: #313131;
+    transform: rotateZ(90deg);
+}
+.left::before {
+    content: "";
+    position: absolute;
+    z-index: 4 !important;
+    display: flex;
+    min-width: 87px;
+    min-height: 3px;
+    top: -4px;
+    left: 7px;
+    background-color: #313131;
+    transform: rotateZ(90deg);
+}
+.right::before {
+    content: "";
+    position: absolute;
+    z-index: 4 !important;
+    display: flex;
+    min-width: 87px;
+    min-height: 3px;
+    top: -4px;
+    left: 7px;
+    background-color: #313131;
+    transform: rotateZ(90deg);
+}
+/*********************************************************************/
+
+@media (max-width: 500px) {
+  /*
+  body {
+    margin: 1vw 25% 0 25%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  */
+  .mainContainerCalc {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 573.2px;
+    max-height: 573.2px;
+
+    font-family: IM Fell DW Pica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .nameCalc {
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .rowCalc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 1px;
+    width: 100%;
+    height: 89px;
+      border: none;
+    outline: none;
+  }
+
+  .onceItemCalc {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 64px;
+    max-width: 64ppx;
+    min-height: 80px;
+    max-height: 80px;
+    border: none;
+    outline: none;
+  }
+  .clickCalc {
+    position: absolute;
+    z-index: 121;
+    width: 100%;
+    height: 100%;
+  }
+  /* СКРЫТЫЙ ТЕКСТ */
+
+  .hiddenTextCalc {
+    display: none;
+    transition: all .3s;
+  }
+  .showedTextCalc {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 15;
+    display: flex;
+    padding: 0 2px 0 20px !important;
+    color: white !important;
+    background-color: rgba(34, 34, 34,.9);
+    flex-direction: column;
+    width: 500px;
+    transition: all .3s;
+  }
+  .showedTextCalc p {
+   font-size: .8em;
+  }
+  .onceItemCalc img {
+      position: absolute;
+      z-index: 10;
+      min-width: 53.35px;
+      max-width: 53.35px;
+      min-height: 53.35px;
+      max-height: 53.35px;
+      background-color: #222222;
+  }
+  .onceItemCalc .roundImgCalc {
+    min-width: 38.8px;
+    max-width: 38.8px;
+    min-height: 38.8px;
+    max-height: 38.8px;
+    border-radius: 50%;
+    background-color: #222222;
+  }
+  .onceItemCalc .bigRoundCalc {
+    border-radius: 50%;
+  }
+  .onceItemCalc .haveNoSkillCalc {
+    visibility: hidden;
+  }
+
+
+  /*********************** БЕЛЫЕ НАПРАВЛЯЮЩИЕ **************************/
+
+  .up::before {
+      content: "";
+      position: absolute;
+      z-index: 4 !important;
+      display: flex;
+      min-width: 100px;
+      min-height: 3px;
+      top: -10px;
+      left: -10px !important;
+      background-color: #313131;
+      transform: rotateZ(90deg);
+  }
+
+  .up::before {
+      content: "";
+      position: absolute;
+      z-index: 4 !important;
+      display: flex;
+      min-width: 87px;
+      min-height: 3px;
+      top: -4px;
+      left: 7px;
+      background-color: #313131;
+      transform: rotateZ(90deg);
+  }
+  .left::before {
+      content: "";
+      position: absolute;
+      z-index: 4 !important;
+      display: flex;
+      min-width: 87px;
+      min-height: 3px;
+      top: -4px;
+      left: 7px;
+      background-color: #313131;
+      transform: rotateZ(90deg);
+  }
+  .right::before {
+      content: "";
+      position: absolute;
+      z-index: 4 !important;
+      display: flex;
+      min-width: 87px;
+      min-height: 3px;
+      top: -4px;
+      left: 7px;
+      background-color: #313131;
+      transform: rotateZ(90deg);
+  }
+/*********************************************************************/
+}
